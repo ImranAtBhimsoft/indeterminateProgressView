@@ -37,6 +37,7 @@ public class IndeterminateProgressView extends View {
     private ObjectAnimator startAngleAnimator;
     private float startAngle;
     private int interpolator;
+    private Interpolator mInterpolator;
 
     public IndeterminateProgressView(Context context) {
         this(context, null);
@@ -98,6 +99,9 @@ public class IndeterminateProgressView extends View {
     }
 
     public void setColorScheme(int... colorScheme) {
+        if (colorScheme.length == 0) {
+            throw new IllegalArgumentException("Set at least one color");
+        }
         this.colorScheme = colorScheme;
     }
 
@@ -114,7 +118,6 @@ public class IndeterminateProgressView extends View {
         startAngleAnimator.setRepeatCount(ObjectAnimator.INFINITE);
 
 
-        Interpolator mInterpolator;
         switch (interpolator) {
             case 0:
                 mInterpolator = new AccelerateDecelerateInterpolator();
@@ -137,12 +140,12 @@ public class IndeterminateProgressView extends View {
     }
 
     @SuppressWarnings("unused")
-    public void setStartAngle(float sAngle) {
+    private void setStartAngle(float sAngle) {
         startAngle = sAngle;
     }
 
     @SuppressWarnings("unused")
-    public float getStartAngle() {
+    private float getStartAngle() {
         return startAngle;
     }
 
