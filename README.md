@@ -24,7 +24,7 @@ Indeterminate Progress is a light weight custom view.
         android:layout_height="64dp" />
         ```
 ##### NOTE:
-#######You have to use xml schema as below i your .xml file
+######You have to use xml schema as below i your .xml file
 ```sh
  xmlns:app="http://schemas.android.com/apk/res-auto"
  ```
