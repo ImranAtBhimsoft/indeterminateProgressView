@@ -1,1 +1,1 @@
-# indeterminateProgressView
+# Indeterminate Progress View
