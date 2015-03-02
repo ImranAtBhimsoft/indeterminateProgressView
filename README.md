@@ -34,6 +34,7 @@ IndeterminateProgressView progressIndicator=(IndeterminateProgressView)view.find
 progressIndicator.setColorScheme(Color.BLACK, Color.BLUE, Color.GREEN, Color.MAGENTA, Color.RED);
 ```
 **For more detail go [here] [1]**
+
 All files in this repository are under the [Apache License][2], Version 2.0 unless noted otherwise.
 
 [1]:http://imranatarbisoft.github.io/indeterminateProgressView/
