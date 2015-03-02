@@ -22,12 +22,12 @@ Indeterminate Progress is a light weight custom view.
         app:outCircle="true"
         app:interpolator="LinearInterpolator"
         android:layout_height="64dp" />
-        ```
+```
 ##### NOTE:
 ######You have to use xml schema as below i your .xml file
 ```sh
  xmlns:app="http://schemas.android.com/apk/res-auto"
- ```
+```
 ##### Java Code:
 ```sh
 IndeterminateProgressView progressIndicator=(IndeterminateProgressView)view.findViewById(R.id.progressIndicator);
