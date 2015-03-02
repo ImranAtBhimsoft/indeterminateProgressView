@@ -33,3 +33,6 @@ Indeterminate Progress is a light weight custom view.
 IndeterminateProgressView progressIndicator=(IndeterminateProgressView)view.findViewById(R.id.progressIndicator);
 progressIndicator.setColorScheme(Color.BLACK, Color.BLUE, Color.GREEN, Color.MAGENTA, Color.RED);
 ```
+** For more detail go [here] [1] **
+
+[1]:http://imranatarbisoft.github.io/indeterminateProgressView/
