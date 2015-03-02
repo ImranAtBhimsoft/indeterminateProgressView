@@ -1,12 +1,16 @@
-- ####Xml code
- #####Default xml code:
+# Indeterminate Progress View
+
+Indeterminate Progress is a light weight custom view.
+###Usage
+##### Xml code
+ - Default xml code:
 ```sh
 <uk.macrotechnologies.library.IndeterminateProgressView
         android:layout_width="wrap_content"
         android:id="@+id/progressIndicator"
         android:layout_height="wrap_content" />
 ```
-#####Custom xml code:
+- Custom xml code:
 ```sh
 <uk.macrotechnologies.library.IndeterminateProgressView
         android:layout_width="64dp"
