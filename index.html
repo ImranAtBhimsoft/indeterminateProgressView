@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Indeterminateprogressview by ImranAtArbisoft</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Indeterminateprogressview</h1>
+          <h2>Progress View, Circular progress View,Indeterminate Progress View</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/ImranAtArbisoft/indeterminateProgressView/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/ImranAtArbisoft/indeterminateProgressView/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/ImranAtArbisoft/indeterminateProgressView" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a id="indeterminate-progress-view" class="anchor" href="#indeterminate-progress-view" aria-hidden="true"><span class="octicon octicon-link"></span></a>Indeterminate Progress View</h1>
+
+<p>Indeterminate Progress is a light weight custom view.</p>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<h5>
+<a id="xml-code" class="anchor" href="#xml-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Xml code</h5>
+
+<ul>
+<li>Default xml code:</li>
+</ul>
+
+<div class="highlight highlight-sh"><pre><span class="pl-k">&lt;</span>uk.macrotechnologies.library.IndeterminateProgressView
+        android:layout_width=<span class="pl-s1"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
+        android:id=<span class="pl-s1"><span class="pl-pds">"</span>@+id/progressIndicator<span class="pl-pds">"</span></span>
+        android:layout_height=<span class="pl-s1"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span> /<span class="pl-k">&gt;</span></pre></div>
+
+<ul>
+<li>Custom xml code:</li>
+</ul>
+
+<div class="highlight highlight-sh"><pre><span class="pl-k">&lt;</span>uk.macrotechnologies.library.IndeterminateProgressView
+        android:layout_width=<span class="pl-s1"><span class="pl-pds">"</span>64dp<span class="pl-pds">"</span></span>
+        android:layout_gravity=<span class="pl-s1"><span class="pl-pds">"</span>center_horizontal<span class="pl-pds">"</span></span>
+        android:layout_marginTop=<span class="pl-s1"><span class="pl-pds">"</span>16dp<span class="pl-pds">"</span></span>
+        app:reverseAnimation=<span class="pl-s1"><span class="pl-pds">"</span>false<span class="pl-pds">"</span></span>
+        app:drawCircles=<span class="pl-s1"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+        app:outCircleColor=<span class="pl-s1"><span class="pl-pds">"</span>#0000FF<span class="pl-pds">"</span></span>
+        app:outCircle=<span class="pl-s1"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>
+        app:interpolator=<span class="pl-s1"><span class="pl-pds">"</span>LinearInterpolator<span class="pl-pds">"</span></span>
+        android:layout_height=<span class="pl-s1"><span class="pl-pds">"</span>64dp<span class="pl-pds">"</span></span> /<span class="pl-k">&gt;</span></pre></div>
+
+<h5>
+<a id="note" class="anchor" href="#note" aria-hidden="true"><span class="octicon octicon-link"></span></a>NOTE:</h5>
+
+<h6>
+<a id="you-have-to-use-xml-schema-as-below-i-your-xml-file" class="anchor" href="#you-have-to-use-xml-schema-as-below-i-your-xml-file" aria-hidden="true"><span class="octicon octicon-link"></span></a>You have to use xml schema as below i your .xml file</h6>
+
+<div class="highlight highlight-sh"><pre> xmlns:app=<span class="pl-s1"><span class="pl-pds">"</span>http://schemas.android.com/apk/res-auto<span class="pl-pds">"</span></span></pre></div>
+
+<h5>
+<a id="java-code" class="anchor" href="#java-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Java Code:</h5>
+
+<div class="highlight highlight-sh"><pre>IndeterminateProgressView progressIndicator=(IndeterminateProgressView)view.findViewById(R.id.progressIndicator)<span class="pl-k">;</span>
+progressIndicator.setColorScheme(Color.BLACK, Color.BLUE, Color.GREEN, Color.MAGENTA, Color.RED)<span class="pl-k">;</span></pre></div>
+        </section>
+
+        <footer>
+          Indeterminateprogressview is maintained by <a href="https://github.com/ImranAtArbisoft">ImranAtArbisoft</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
