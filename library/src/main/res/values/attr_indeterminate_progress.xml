@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="IndeterminateProgressView">
+        <attr name="outCircleColor" format="color|reference" />
+        <attr name="outCircle" format="boolean|reference" />
+        <attr name="drawCircles" format="boolean|reference" />
+        <attr name="duration" format="integer|reference" />
+        <attr name="reverseAnimation" format="boolean|reference" />
+        <attr name="interpolator"/>
+        <!--Interpolator-->
+
+
+    </declare-styleable>
+    <attr name="interpolator" format="enum">
+        <enum name="AccelerateDecelerateInterpolator" value="0" />
+        <enum name="LinearInterpolator" value="1" />
+
+    </attr>
+</resources>
