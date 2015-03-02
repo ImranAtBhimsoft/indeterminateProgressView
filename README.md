@@ -1,6 +1,8 @@
 # Indeterminate Progress View
 
 Indeterminate Progress is a light weight custom view.
+###Demo
+![alt text](https://github.com/ImranAtArbisoft/indeterminateProgressView/blob/master/demo.gif "Demo gif")
 ###Usage
 ##### Xml code
  - Default xml code:
