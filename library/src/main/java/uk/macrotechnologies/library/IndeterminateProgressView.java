@@ -29,7 +29,7 @@ public class IndeterminateProgressView extends View {
     private static final int DEFAULT_HEIGHT = 48;
     private static final int DEFAULT_DURATION = 2000;
     private int defaultDuration;
-    private static final int radiusSmall = 8;
+    private float radiusSmall;
     private int initialIndex;
     private boolean shouldDrawOutCircle;
     private boolean drawOutCircles;
@@ -37,7 +37,6 @@ public class IndeterminateProgressView extends View {
     private ObjectAnimator startAngleAnimator;
     private float startAngle;
     private int interpolator;
-    private Interpolator mInterpolator;
 
     public IndeterminateProgressView(Context context) {
         this(context, null);
@@ -58,6 +57,8 @@ public class IndeterminateProgressView extends View {
         interpolator = a.getInt(R.styleable.IndeterminateProgressView_interpolator, 0);
         a.recycle();
         mPaintCircle.setColor(outCircleColor);
+        radiusSmall = getResources().getDimension(R.dimen.small_circle_size);
+        Log.d("sixe", radiusSmall + "");
     }
 
     @Override
@@ -118,6 +119,7 @@ public class IndeterminateProgressView extends View {
         startAngleAnimator.setRepeatCount(ObjectAnimator.INFINITE);
 
 
+        Interpolator mInterpolator;
         switch (interpolator) {
             case 0:
                 mInterpolator = new AccelerateDecelerateInterpolator();
